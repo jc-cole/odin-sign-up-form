@@ -8,11 +8,15 @@
 </head>
 <body>
     <div id="left-column-image">
-        <div id="odin-logo-container">
-            <img src="odin-lined.png" alt="Odin logo">
-            <h1>ODIN</h1>
+        <div id="odin-logo-flexbox">
+            <div id="odin-logo-container">
+                <img src="odin-lined.png" alt="Odin logo">
+                <h1>ODIN</h1>
+            </div>
         </div>
-        <p id="footer"> Photo by <a>Hallie West</a> on <a>Unsplash</a></p>
+        <div id="footer-flexbox">
+            <p id="footer"> Photo by <a>Hallie West</a> on <a>Unsplash</a></p>
+        </div>
 
     </div>
     <main>
@@ -21,32 +25,42 @@
             like this in your life to help you realize your deepest dreams.
             Sign up now to get started.
         </h2>
-        <h2> you <em>know</em> you want to. </h2>
+        <h2>You <em>know</em> you want to. </h2>
         <form action="">
-            
-            <div id="input-field-container">
+            <div id="input-field-flexbox">
                 <h2>Let's do this!</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
 
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
-
-                <label for="email">Email</label>
-                <input type="email" name="email">
-
-                <label for="text">Phone Number</label>
-                <input type="text" name="phone-number">
-
-                <label for="password">Password</label>
-                <input type="password" name="password">
-
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password">
+                <div id="input-field-container">
+                    <div class="input-field-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="text">Phone Number</label>
+                        <input type="text" name="phone-number" required>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" required>
+                    </div>
+                </div>
             </div>
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a>Log in</a></p>
+            
         </form>
+        <p>Already have an account? <a>Log in</a></p>
     </main>
 </body>
 </html>
